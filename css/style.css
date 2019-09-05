@@ -1,0 +1,568 @@
+
+@import url('https://fonts.googleapis.com/css?family=Lobster+Two');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+
+body{
+    font-family:'Roboto Condensed',sans-serif; 
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    height:100%;
+    
+}
+body::-webkit-scrollbar {
+    width: 0.6em;
+  }
+  
+  body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+  }
+  
+  body::-webkit-scrollbar-thumb {
+  background-color:#175cf2;
+  outline: 1px solid blue;
+  }
+
+.logo{
+    color:blue;
+    font-weight:bold;
+    margin-left:400px;
+    font-size:1.4rem;
+    margin-top:16px;
+}
+.btn-blue{
+    
+    border-radius:5px;
+    margin-top:15px;
+    background:orange;
+    
+    height:4vh;
+    font-size:1rem;
+    border:none;
+    margin-left:10px;
+
+}
+.btn-green{
+    background:orange;
+    border:none;
+    height:4vh;
+    font-size:1rem;
+    border-radius:5px;
+    margin-left:10px;
+}
+
+a{
+    text-decoration:none;
+}
+.fixed-top{
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index:1030;
+    /* margin:3px; */
+    display:flex;
+    background:rgb(233, 231, 220);
+    height: 10vh;
+    border:2px rgb(233, 231, 220) solid;
+    grid-area:fixed-top;
+}
+.nav-items{
+    display:flex;
+    padding:10px;
+}
+.nav-item{
+    padding:5px;
+    margin-left:15px;
+    color:blue;
+    font-weight:bold;
+    text-align: center;
+    justify-content: center;
+}
+.nav-item:hover{
+    border-bottom-color:1px blue solid;
+}
+/*
+.changer{
+    
+    width:40%;
+    margin-left:180px;
+    
+}
+*/
+/*
+.text{
+    text-align:center;
+    font-weight:bold;
+    
+    
+}
+*/
+
+  
+
+
+.footer{
+        position: fixed;
+        bottom:0;
+        left:0;
+        right:0;
+        z-index:1030;
+        
+        display:flex;
+        justify-content: space-around;
+        background:rgb(233, 231, 220);
+        
+        border:2px rgb(233, 231, 220) solid;
+        grid-area:footer;
+        
+}
+.andi{
+    text-align: center;
+    padding-top:10px;
+}
+.header{
+  /* margin:3px;  */
+   display:grid;
+   max-width:auto;
+   margin: auto;
+   width:97%;
+   grid-template-rows:  (minmax(auto,min-content));
+   grid-template-columns:repeat(auto-fill, auto);
+   grid-template-columns:repeat(auto-fit,auto);
+   grid-template-columns:repeat(auto-fit,minmax(auto));
+   
+    
+
+   /*  
+   grid-template-areas: 
+   'fixed-top fixed-top fixed-top'
+   'con con1 con1' 
+   'sub-section sub-section sub-section'
+   'sub-sec1 sub-sec1 sub-sec1'
+   'sub-sec2 sub-sec2 sub-sec2'
+   'sub-sec3 sub-sec3 sub-sec3'
+   'footer footer footer ';
+     */
+
+}
+.sub-sec3{
+              background:rgb(231, 231, 227);
+              /* grid-area:sub-sec3; */
+              grid-template-areas:
+              'explore explore'
+              'flex3 flex3'
+              'btn btn';
+              
+              
+            }
+            .btn-light{
+                grid-area:btn;
+            }
+            .explore{
+                grid-area:explore;
+            }
+            .flex3{
+                justify-items: center;
+                grid-area:flex3;
+                display:flex;
+                /* width:70%; */
+            }
+            .btn-light{
+                background:brown;
+                border:none;
+                font-size:1.4rem;
+                border-radius:10px;
+                color:#fff;
+            
+                
+
+            }
+            .btn-light:hover{
+                background:unset;
+                color:brown;
+                font-weight:bold;
+                font-size:1.6rem;
+            }
+            .img6{
+                background:url('../img/school-bus.jpg')no-repeat center center/cover;
+                height:auto !important;
+                width:100%;
+            }
+            .img6:hover{
+                background:unset;
+            }
+            .sub-sec1{
+                background:rgb(211, 203, 155);
+               grid-area:sub-sec1; 
+               display:grid;
+               grid-template-areas: 
+               'h3 h3'
+               'flex flex';
+
+
+            }
+            .sec{
+                grid-area:h3;
+                text-align: center;
+                 color:brown;
+                font-size:1.6rem;
+            
+            }
+            .flex{
+                justify-self:center;
+                
+                grid-area:flex;
+                display:flex;
+                width:70%;
+                margin-left:100px;
+                
+                
+                
+            }
+            .img4{
+                
+                background:url('../img/driver_1.gif')no-repeat center center/cover;
+                height:50vh !important;
+                width:100%;
+            
+                
+                
+            }
+            .img4:hover{
+                background:url('../img/school-bus.jpg')no-repeat center center/cover;
+            }
+            .paragraph{
+              margin-left:20px; 
+              font-size:1.5rem; 
+              color:#3c3c3c;
+            }
+            .sub-sec2{
+                background:rgb(233, 223, 223);
+                /* grid-area:sub-sec2; */
+                display:grid;
+                grid-template-areas:
+                'h h '
+                'flex2 flex2';
+
+                
+            }
+            .h{
+                grid-area:h;
+                text-align:center;
+            }
+            .flex2{
+                margin-left: 100px;
+                
+                width:70%;
+                grid-area:flex2;
+                display:flex;
+                justify-self: center;
+            }
+            .img5{
+                background:url('../img/ny.jpg')no-repeat center center/cover;
+                height:50vh !important;
+                width:100%;
+            }
+            .sub-section{
+                background:rgb(226, 226, 231);
+                grid-area:sub-section;
+                display:grid;
+                grid-template-areas: 'sub1 sub2 sub3 ';
+                grid-gap:5px;
+                /* justify-self:center; */
+                /* max-width:1300px; */
+   margin: auto;
+   width:90%;
+   /* grid-template-rows:  (minmax(auto,min-content)); */
+   /* grid-template-rows:  repeat(3,minmax(auto,min-content)); */
+   /* grid-template-columns:repeat(3, 100px); */
+   /* grid-template-columns:repeat(3,100px); */
+   /* grid-template-columns:repeat(3,minmax(100px,1fr)); */
+                
+   /* grid-template-rows:  repeat(3,minmax(min-content)); */
+   /* grid-template-columns:100px repeat(auto-fill,1fr)100px; */
+   /* grid-template-columns:100px repeat(auto-fit,1fr)100px; */
+   /* grid-template-columns:  repeat(auto-fit,minmax(1fr)); */
+   
+            }
+            
+            .sub1{
+                
+                /* width:; */
+                grid-area:sub1;
+                background:white;
+                /* margin:15px; */
+                /* margin-left:85px; */
+                border-radius:10px;
+                border-top:10px;
+            
+            }
+            .img{
+                background:url('../img/city-protected-dome.jpg')no-repeat center center/cover;
+                height:50vh !important;
+                
+                border-top-right-radius: 10px;
+                border-top-left-radius: 10px;
+            
+                
+                
+            }
+            .sub2{
+                grid-area:sub2;
+                width:auto;
+                border-radius:10px;
+                border-top:10px;
+                background:white;
+                /* margin-left:1px; */
+                
+         
+
+            }
+            .img2{
+                background:url('../img/ny.jpg')no-repeat center center/cover;
+                height:50vh !important;
+                
+                border-top-right-radius: 10px;
+                border-top-left-radius: 10px;
+            
+            }
+            .sub3{
+                grid-area:sub3;
+                width:auto;
+                border-radius:10px;
+                border-top:10px;
+                background:white;
+                
+                
+                
+
+            }
+            .txt1, .txt2, .txt3{
+                text-align: center;
+            }
+            .img3{
+                background:url('../img/vanz-02.jpg')no-repeat center center/cover;
+                height:50vh !important;
+                
+                border-top-right-radius: 10px;
+                border-top-left-radius: 10px;
+            }
+            
+            
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+            .con1{
+                background:rgb(250, 240, 240);
+                
+                grid-area:con1;
+                
+        
+            
+                
+                
+            }
+            .changer{
+                /* display:inline-block; */
+                width:50% !important;
+                height:100%;
+                border-radius:15px;
+                justify-items:center !important;
+                margin-left:70px;
+                
+            }
+            p{
+                color:#3c3c3c;
+                line-height:1.8;
+                font-weight:100;
+            }
+    .btn-yellow{
+     background-color:brown;
+     color:white;
+     font-size:1.4rem;
+     border:none;
+     border-radius:10px;
+     color:white;
+     box-shadow: 0 4px 4px 1px rgb(211, 203, 155);
+    }
+    .btn-yellow:hover{
+       background:rgb(58, 5, 5);
+    }
+    .r{
+        text-align:center;
+        color:brown;
+        font-size:1.4rem;
+        font-weight:bold;
+        box-shadow:0 4px 4px 1px rgb(71, 21, 34);
+    }
+
+    .conta{
+        margin:30px 100%;
+        max-width: 400px;
+        padding:20px;
+        margin-left:400px;
+    }
+    .con{
+        margin-left:360px ;
+        margin-top:40px;
+        
+        max-width: 400px;
+        padding:20px;
+        
+    }
+  .form-wrap{
+    background:#fff;
+    padding:15px 25px; 
+    color:#333; 
+    
+  }
+  .form-group{
+      margin-top: 15px;
+  }
+  label{
+      display:block;
+      color:#666;
+  }
+  input{
+      width:100%;
+      padding:10px;
+      border:#ddd 1px solid;
+      border-radius:5px;
+  }
+  .sub{
+      display:block;
+      width:100%;
+      padding:10px;
+      margin-top:20px;
+      background:#49c1a2;
+      cursor:pointer;
+      border:none;
+  }
+  .not{
+      font-size: 16px;
+      margin-top:20px;
+  }
+  .fill{
+      text-align: center;
+  }
+   @media only screen and(min-width:800px){
+     .img4{
+         width:70%;
+     }  
+   }
+ @media only screen and (max-width:768px){
+     
+.sub-section{
+    display:grid;
+    grid-template-areas: "sub1"
+    "sub2"
+    "sub3";
+}
+.sub1{
+    grid-area:sub1;
+
+}
+.sub2{
+    grid-area:sub2;
+}
+.sub3{
+    grid-area:sub3;
+}
+.sub-sec1{
+    display:grid;
+    grid-template-areas: "sec"
+    "flex";
+}
+.img, .img2, .img3{
+    border-radius:10px;
+}
+.sec{
+grid-area:sec;
+text-align: center;
+}
+.flex{
+    grid-area:flex;
+    margin:auto;
+    /* justify-self:center; */
+    display:grid;
+    grid-template-areas: "img4"
+    "paragraph";
+
+}
+.img4{
+    grid-area:img4;
+    border-radius:10px;
+}
+.paragraph{
+    grid-area: paragraph;
+    font-weight:lighter;
+    margin:auto;
+    margin-bottom:10px !important;
+}
+
+
+.sub-sec2{
+    display:grid;
+    grid-template-areas:"h"
+    "flex2"
+    
+    
+}
+.flex2{
+    grid-area:flex2;
+    margin:auto;
+    
+    display:grid;
+    grid-template-areas: "img5"
+    "txt4";   
+}
+.img5{
+    grid-area:img5;
+    border-radius:10px;
+}
+.txt4{
+    grid-area: txt4;
+
+    margin:auto;
+    margin-bottom:10px !important;
+}
+
+.btn-yellow{
+    margin-bottom:10px;
+}
+
+
+.sub-sec3{
+    display:grid;
+    grid-template-areas:"explore"
+    "flex3";
+    
+}
+.explore{
+    grid-area:explore;
+    text-align:center;
+}
+.flex3{
+    grid-area:flex3;
+    display:grid;
+    grid-template-areas:"img6 "
+    "parag1";
+    margin-bottom:70px;
+
+}
+.fixed-top{
+    display:none;
+}
+
+.parag1{
+    grid-area:parag1;
+    margin:auto;
+    margin-bottom:10px;
+    text-align:center;
+}
+.img6{
+    grid-area:img6 !important;
+    border-radius:10px;
+}
+}
+  
